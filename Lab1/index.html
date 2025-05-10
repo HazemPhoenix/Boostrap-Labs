@@ -3,26 +3,162 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portfolio</title>
+    <title>Full-Stack Laravel Developer Portfolio</title>
     <link href="./boostrap/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <header class="bg-primary text-white text-center py-5">
-      <h1>Hazem Abdulmoneim</h1>
-      <p class="lead">Full Stack Developer</p>
-    </header>
+  <body class="bg-dark text-light">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-secondary"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">Hazem Abdulmoneim</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#certs">Certifications</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-    <section class="container my-5 text-center">
-      <img
-        src="your-photo.jpg"
-        class="rounded-circle mb-3"
-        alt="Profile"
-        width="150"
-      />
-      <p><strong>Email:</strong> hazemabdulmoneim@gmail.com</p>
-      <p><strong>Phone:</strong> +201014656945</p>
-      <p><strong>Location:</strong> Cairo, Egypt</p>
-    </section>
+    <div class="container py-5">
+      <section
+        id="about"
+        class="d-flex flex-column flex-lg-row gap-5 align-items-center g-4"
+      >
+        <div class="text-center text-lg-start">
+          <img
+            src="./assets/488997303_1170131905123655_6218814459474291714_n.png"
+            class="rounded-5 mb-3"
+            alt="Profile"
+            width="300"
+          />
+        </div>
+        <div>
+          <h1 class="display-5">Full-Stack Laravel Developer</h1>
+          <p class="lead">
+            Building scalable web applications with Laravel, Vue.js, and MySQL.
+          </p>
+          <p>
+            I craft robust back-end APIs in Laravel and deliver intuitive
+            front-end experiences using modern JavaScript frameworks.
+          </p>
+          <div class="d-flex flex-column flex-sm-row gap-3 mt-3">
+            <a
+              href="mailto:hazemabdulmoneim@gmail.com"
+              class="text-light text-decoration-none"
+              ><i class="bi bi-envelope me-1"></i>hazemabdulmoneim@gmail.com</a
+            >
+            <a href="tel:+201014656945" class="text-light text-decoration-none"
+              ><i class="bi bi-phone me-1"></i>+201014656945</a
+            >
+            <span><i class="bi bi-geo-alt me-1"></i>Cairo, Egypt</span>
+          </div>
+        </div>
+      </section>
+
+      <div class="border-top border-secondary my-5"></div>
+
+      <section id="skills-projects" class="row gy-4">
+        <div id="skills" class="col-lg-6">
+          <div class="card bg-secondary bg-opacity-10 border-0 h-100">
+            <div class="card-body">
+              <h2 class="card-title text-white">Skills</h2>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-transparent text-light ps-0">
+                  PHP | Laravel | Node
+                </li>
+                <li class="list-group-item bg-transparent text-light ps-0">
+                  JavaScript | Vue.js
+                </li>
+                <li class="list-group-item bg-transparent text-light ps-0">
+                  MySQL | MongoDB
+                </li>
+                <li class="list-group-item bg-transparent text-light ps-0">
+                  RESTful APIs | Microservices
+                </li>
+                <li class="list-group-item bg-transparent text-light ps-0">
+                  Docker | CI/CD
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="projects" class="col-lg-6">
+          <div class="card bg-secondary bg-opacity-10 border-0 h-100">
+            <div class="card-body text-white">
+              <h2 class="card-title">Projects</h2>
+              <div class="mb-4 mt-3">
+                <h5 class="card-subtitle mb-1">E-Commerce Platform</h5>
+                <p class="card-text text-light">
+                  A full-featured e-commerce system with user authentication,
+                  product management, and payment integration.
+                </p>
+              </div>
+              <div>
+                <h5 class="card-subtitle mb-1">Reservio Web App</h5>
+                <p class="card-text text-light">
+                  A full-featured web application to streamline the reservation
+                  process to different types of venues.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="border-top border-secondary my-5"></div>
+
+      <section id="certs" class="text-center">
+        <h2>Certifications | Achievements</h2>
+        <div class="row justify-content-center mt-4 g-4">
+          <div class="col-md-4">
+            <div class="card bg-secondary bg-opacity-10 border-0 text-white">
+              <div class="card-body">
+                <h5 class="card-title">Laravel Certified Developer</h5>
+                <p class="card-text">Laravel Certification Program, 2025</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card bg-secondary bg-opacity-10 border-0 text-white">
+              <div class="card-body">
+                <h5 class="card-title">Advanced PHP | MySQL</h5>
+                <p class="card-text">Course completion at ITI, 2025</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer
+      class="bg-dark text-center text-light py-3 border-top border-secondary"
+    >
+      &copy; 2025 Hazem Abdulmoneim. All Rights Reserved.
+    </footer>
 
     <script src="./boostrap/bootstrap.bundle.min.js"></script>
   </body>
